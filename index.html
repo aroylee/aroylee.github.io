@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Roy Lee Girón | Arquitecto de Datos & BI Leader</title>
+  <meta name="description" content="Arquitecto de Datos con 15+ años en Oracle, Google Cloud, ETL y BI. Reducción del 60% en tiempos de procesamiento. Google Cloud Certified (20+ badges).">
+  <meta name="author" content="Roy Lee Girón">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Roy Lee Girón - Data Architect Portfolio">
+  <meta property="og:description" content="Líder en BI, Data Pipelines y Cloud Analytics. Experto en Oracle, BigQuery, Power BI.">
+  <meta property="og:image" content="https://aroylee.github.io/assets/banner.jpg">
+  <meta property="og:url" content="https://aroylee.github.io">
+  <meta property="og:type" content="website">
+  <!-- Favicon -->
+  <link rel="icon" href="https://github.githubassets.com/favicon.ico">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #1a73e8;
+      --dark: #202124;
+      --light: #f8f9fa;
+      --gray: #5f6368;
+      --success: #34a853;
+    }
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--light);
+      color: var(--dark);
+      line-height: 1.6;
+    }
+    .container { max-width: 1000px; margin: auto; padding: 2rem 1rem; }
+    header {
+      text-align: center;
+      padding: 3rem 1rem;
+      background: linear-gradient(135deg, #1a73e8, #34a853);
+      color: white;
+      border-radius: 12px;
+      margin-bottom: 2rem;
+    }
+    header h1 { font-size: 2.5rem; margin-bottom: .5rem; }
+    header p { font-size: 1.2rem; opacity: 0.9; }
+    .btn {
+      display: inline-block;
+      background: white;
+      color: var(--primary);
+      padding: .6rem 1.2rem;
+      border-radius: 6px;
+      font-weight: 600;
+      text-decoration: none;
+      margin-top: 1rem;
+      transition: 0.3s;
+    }
+    .btn:hover { background: #e8f0fe; transform: translateY(-2px); }
+    .section { margin-bottom: 2.5rem; }
+    .section h2 {
+      color: var(--primary);
+      border-bottom: 2px solid var(--primary);
+      padding-bottom: .5rem;
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+    }
+    .experience-item, .cert-item {
+      background: white;
+      padding: 1.2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      margin-bottom: 1rem;
+    }
+    .experience-item h3 { color: var(--dark); font-size: 1.2rem; }
+    .experience-item .date { font-size: 0.9rem; color: var(--gray); margin-bottom: .5rem; }
+    ul { padding-left: 1.2rem; }
+    li { margin-bottom: .4rem; }
+    .badge-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+      gap: .8rem;
+      margin-top: 1rem;
+    }
+    .badge {
+      background: #e8f0fe;
+      color: var(--primary);
+      padding: .4rem .6rem;
+      border-radius: 6px;
+      font-size: 0.8rem;
+      text-align: center;
+      font-weight: 600;
+    }
+    .lang-toggle {
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      border: 1px solid #ddd;
+      padding: .4rem .8rem;
+      border-radius: 6px;
+      font-size: 0.9rem;
+      z-index: 100;
+    }
+    .hidden { display: none; }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: var(--gray);
+      font-size: 0.9rem;
+      border-top: 1px solid #eee;
+      margin-top: 3rem;
+    }
+    @media (max-width: 768px) {
+      header h1 { font-size: 2rem; }
+      .badge-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media print {
+      .lang-toggle, .btn { display: none; }
+      body { font-size: 10pt; }
+      .container { padding: 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="lang-toggle">
+    <a href="#" onclick="toggleLang('es')">ES</a> | 
+    <a href="#" onclick="toggleLang('en')">EN</a>
+  </div>
+
+  <div class="container">
+
+    <!-- HERO -->
+    <header>
+      <h1>Roy Lee Girón</h1>
+      <p id="hero-title-es">Arquitecto de Datos & Líder en BI | Google Cloud Certified (20+ Badges)</p>
+      <p id="hero-title-en" class="hidden">Data Architect & BI Leader | Google Cloud Certified (20+ Badges)</p>
+      <a href="https://www.linkedin.com/in/aroylee/" target="_blank" class="btn">LinkedIn</a>
+      <a href="https://github.com/aroylee" target="_blank" class="btn">GitHub</a>
+    </header>
+
+    <!-- SUMMARY -->
+    <div class="section">
+      <h2 id="sec-resumen-es">Resumen Profesional</h2>
+      <h2 id="sec-resumen-en" class="hidden">Professional Summary</h2>
+      <p id="summary-es">
+        Arquitecto de Datos con <strong>15+ años</strong> liderando infraestructura de datos, pipelines ETL y BI en finanzas, aviación y tecnología. 
+        Reduje tiempos de procesamiento en <strong>60%</strong> gestionando <strong>300+ pipelines diarios</strong> con ITIL/COBIT. 
+        Experto en Oracle RAC, BigQuery, Power BI y Gemini AI. Certificado en Google Cloud con <strong>20+ badges</strong> (noviembre 2025).
+      </p>
+      <p id="summary-en" class="hidden">
+        Data Architect with <strong>15+ years</strong> leading data infrastructure, ETL pipelines, and BI in finance, aviation, and tech. 
+        Reduced processing times by <strong>60%</strong> managing <strong>300+ daily pipelines</strong> using ITIL/COBIT. 
+        Expert in Oracle RAC, BigQuery, Power BI, and Gemini AI. Google Cloud Certified with <strong>20+ badges</strong> (Nov 2025).
+      </p>
+    </div>
+
+    <!-- EXPERIENCE -->
+    <div class="section">
+      <h2 id="sec-exp-es">Experiencia Laboral</h2>
+      <h2 id="sec-exp-en" class="hidden">Work Experience</h2>
+
+      <div class="experience-item">
+        <h3>Arquitecto de Datos</h3>
+        <div class="date">Applaudo · Octubre 2024 – Presente</div>
+        <ul>
+          <li>Integré y lideré equipos multi-proyecto de data engineering para arquitecturas escalables.</li>
+          <li>Diseñé marcos de gobernanza en entornos híbridos, reduciendo despliegues en 40%.</li>
+          <li>Implementé AI/ML con BigQuery y Gemini para insights en tiempo real.</li>
+        </ul>
+      </div>
+
+      <div class="experience-item">
+        <h3>Jefe de Inteligencia de Negocios, Analítica y Big Data</h3>
+        <div class="date">Banco Azul · Agosto 2021 – Octubre 2024</div>
+        <ul>
+          <li>Optimicé 300+ pipelines diarios con ITIL → <strong>60% reducción</strong> en tiempos de carga.</li>
+          <li>Estructuré equipo BI con Agile BI y CRISP-DM para 20+ áreas de negocio.</li>
+          <li>Garanté gobernanza y privacidad de datos conforme a COBIT.</li>
+        </ul>
+      </div>
+
+      <div class="experience-item">
+        <h3>Coordinador de Proyectos BI</h3>
+        <div class="date">TACA International Airlines · Octubre 2003 – Octubre 2007</div>
+        <ul>
+          <li>Optimicé ETL con PL/SQL y funciones analíticas → <strong>40% menos tiempo</strong> de carga.</li>
+          <li>Diseñé modelos de datos para Marketing, Booking y TCN.</li>
+          <li>Preparé infraestructura para fusión Avianca-TACA (2009).</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- SKILLS -->
+    <div class="section">
+      <h2 id="sec-skills-es">Habilidades Técnicas</h2>
+      <h2 id="sec-skills-en" class="hidden">Technical Skills</h2>
+      <div class="badge-grid">
+        <div class="badge">Oracle RAC 19c</div>
+        <div class="badge">Google BigQuery</div>
+        <div class="badge">Power BI</div>
+        <div class="badge">Tableau</div>
+        <div class="badge">PL/SQL</div>
+        <div class="badge">ETL Pipelines</div>
+        <div class="badge">Gemini AI</div>
+        <div class="badge">Agile BI</div>
+        <div class="badge">Data Governance</div>
+        <div class="badge">SQL Server</div>
+      </div>
+    </div>
+
+    <!-- CERTIFICATIONS -->
+    <div class="section">
+      <h2 id="sec-certs-es">Certificaciones</h2>
+      <h2 id="sec-certs-en" class="hidden">Certifications</h2>
+      <p><strong>Google Cloud</strong> (20+ badges, 2025):</p>
+      <div class="badge-grid">
+        <div class="badge">BigQuery for Analysts</div>
+        <div class="badge">Gemini for Data Scientists</div>
+        <div class="badge">Data Engineering</div>
+        <div class="badge">Generative AI</div>
+        <div class="badge">Looker Studio</div>
+        <div class="badge">Professional Data Engineer Prep</div>
+      </div>
+      <p style="margin-top:1rem;">
+        <a href="https://www.credly.com/users/aroylee/badges" target="_blank">Ver en Credly</a> | 
+        <a href="https://www.skills.google/public_profiles/569cc022-d47c-4811-b8fd-7ca143854bdd" target="_blank">Google Skills</a>
+      </p>
+      <p><strong>CompTIA Project+</strong> (2024) | <strong>Oracle Dev Gym: aroylee</strong> → <a href="https://devgym.oracle.com/pls/apex/f?p=100:1:::::P1_USERNAME:aroylee" target="_blank">Ver perfil</a></p>
+    </div>
+
+    <!-- EDUCATION -->
+    <div class="section">
+      <h2 id="sec-edu-es">Educación</h2>
+      <h2 id="sec-edu-en" class="hidden">Education</h2>
+      <p><strong>Licenciatura en Ciencias de la Computación</strong><br>
+      Universidad Centroamericana José Simeón Cañas · 2009</p>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="section">
+      <h2 id="sec-contact-es">Contacto</h2>
+      <h2 id="sec-contact-en" class="hidden">Contact</h2>
+      <p>📍 Antiguo Cuscatlán, El Salvador<br>
+      📧 <a href="mailto:aroylee@gmail.com">aroylee@gmail.com</a><br>
+      🔗 <a href="https://www.linkedin.com/in/aroylee/">linkedin.com/in/aroylee</a></p>
+    </div>
+
+  </div>
+
+  <footer>
+    &copy; 2025 Roy Lee Girón | Portfolio alojado en GitHub Pages
+  </footer>
+
+  <script>
+    function toggleLang(lang) {
+      document.querySelectorAll('[id$="-es"], [id$="-en"]').forEach(el => {
+        el.classList.add('hidden');
+        if (el.id.includes('-' + lang)) el.classList.remove('hidden');
+      });
+      localStorage.setItem('lang', lang);
+    }
+    // Load saved language
+    const savedLang = localStorage.getItem('lang') || 'es';
+    toggleLang(savedLang);
+  </script>
+</body>
+</html>
